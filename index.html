@@ -21,14 +21,41 @@
 			<hr />
 			<dialog id="modal">
 				<form id="contact">
-					<input name="adress" type="email" placeholder="email@gmail.com" />
-					<input name="code" type="password" placeholder="mot de passe" />
-					<input name="numero" type="number" placeholder="00 00 00 00 00" />
-					<button type="submit" id="submit">submit</button>
+					<h2>Ajouter une tâche</h2>
+					<div class="name">
+						<h3>nom<span>*</span></h3>
+						<input name="adress" class="input" type="text" />
+					</div>
+					<div class="duree">
+						<h3>duree<span>*</span></h3>
+						<div class="chiant">
+							<div class="checklong">
+								<input id="checkbox1" name="duree" type="radio" />
+								<p>Longue</p>
+							</div>
+							<div class="checkshort">
+								<input id="checkbox2" name="duree" type="radio" />
+								<p>Courte</p>
+							</div>
+						</div>
+					</div>
+					<div class="prioritaire">
+						<input type="checkbox" />
+						<p>Cette tâche est prioritaire</p>
+					</div>
+					<button type="submit" id="submit">ajouter une tâche</button>
 				</form>
 			</dialog>
+			<section id="todo"></section>
 		</main>
 
 		<script src="app.js"></script>
 	</body>
 </html>
+<!-- exemple--<section>
+	<input type="checkbox" />
+	<div class="done"><p>done</p></div>
+	<h4>Acheter des Vbucks</h4>
+	<p>Courte</p>
+	<button>supprimer</button>
+</section>>

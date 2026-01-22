@@ -52,4 +52,83 @@ button {
 }
 form {
 	background-color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
+	gap: 24px;
+}
+span {
+	color: #0c7d69;
+}
+.name {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.chiant {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+.duree {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.checklong,
+.checkshort {
+	width: 50%;
+	display: flex;
+	border: 1px solid var(--color-grey-500, #86a2a5);
+	border-radius: 8px;
+	padding: 8px 64px 8px 24px;
+	gap: 12px;
+}
+dialog {
+	width: 40%;
+	border: none;
+	border-radius: 24px;
+}
+dialog::backdrop {
+	background-color: #86a2a5bf;
+}
+.prioritaire {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+}
+h2 {
+	font-weight: 700;
+	font-style: Bold;
+	color: #2a4144;
+	line-height: 100%;
+	letter-spacing: -1px;
+}
+h3 {
+	font-weight: 400;
+	color: #2a4144;
+	line-height: 150%;
+	letter-spacing: 0%;
+
+	display: flex;
+	gap: 4px;
+}
+
+.input {
+	border: 1px solid var(--color-grey-500, #86a2a5);
+	padding: 12px;
+	border-radius: 12px;
+}
+
+input[type="checkbox"] {
+	width: 16px;
+	height: 16px;
+	padding: 2px 4px;
+	border-radius: 4px;
+}
+#checkbox1[type="radio"],
+#checkbox2[type="radio"] {
+	border-radius: 999px;
 }
